@@ -1,0 +1,20 @@
+tr th{
+    padding: 20px;
+    min-width: 75px;
+}
+tr th:first-child{
+    padding-left: 5px;
+}
+tr td{
+    padding: 5px 20px;
+    min-width: 75px;
+ }
+tr td:first-letter{
+    text-transform: capitalize;
+}
+tr td:first-child{
+    padding-left: 5px;
+}
+th, td {
+    border-bottom: 1px solid #bebebe;
+}
