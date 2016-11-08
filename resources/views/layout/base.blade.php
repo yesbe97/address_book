@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <div style="width: 50%; margin-right: auto; margin-left: auto; margin-bottom: 20px; display: block; background-color: #e7e7e7; padding: 20px">
+    <div style="width: 52%; margin-right: auto; margin-left: auto; margin-bottom: 20px; display: block; background-color: #e7e7e7; padding: 20px">
         @yield('content')
     </div>
 
