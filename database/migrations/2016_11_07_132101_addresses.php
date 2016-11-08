@@ -19,6 +19,8 @@ class Addresses extends Migration
             $table->string('last_name');
             $table->string('street_name');
             $table->string('home_number');
+            $table->string('city');
+            $table->string('zipcode');
             $table->string('phone_number');
             $table->timestamps();
         });

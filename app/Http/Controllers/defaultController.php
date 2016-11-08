@@ -7,9 +7,11 @@ use App\Http\Requests\addressesRequest;
 
 class defaultController extends Controller
 {
-    public function index()
+    public function index($type = 'asc')
     {
-        return view('index');
+        $persons = addresses::orderBy('first_name', $type)->get();
+
+        return view('index')->with('persons', $persons);
     }
 
     public function createForm()

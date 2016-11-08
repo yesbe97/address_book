@@ -28,6 +28,8 @@ class addressesRequest extends FormRequest
             "last_name" => "required",
             "street_name" => "required",
             "home_number" => "required|integer|max:9999",
+            "city" => "required",
+            "zipcode" => "required|max:6",
             "phone_number" => "required|numeric|max:999999999",
         ];
     }

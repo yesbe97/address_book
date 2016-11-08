@@ -11,6 +11,8 @@ class addresses extends Model
         "last_name",
         "street_name",
         "home_number",
+        "city",
+        "zipcode",
         "phone_number",
         "created_at",
         "updated_at"

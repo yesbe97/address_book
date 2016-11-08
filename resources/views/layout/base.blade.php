@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Adres boek</a>
+                <a class="navbar-brand" href="{{ route('overview') }}">Adres boek</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,8 +36,10 @@
         </div>
     </nav>
 
-    <div style="width: 50%; margin-right: auto; margin-left: auto; display: block; background-color: #e7e7e7; padding: 20px">
+    <div style="width: 50%; margin-right: auto; margin-left: auto; margin-bottom: 20px; display: block; background-color: #e7e7e7; padding: 20px">
         @yield('content')
     </div>
+
+    @yield('js')
 </body>
 </html>
